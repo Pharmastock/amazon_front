@@ -38,7 +38,7 @@ const AddData = () => {
 
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
     axios
-      .post("http://localhost:9000/product/add", values)
+      .post("https://aamzon-back.onrender.com/product/add", values)
       .then((response) => {
         console.log(response.data);
         alert("Product added successfully!");
